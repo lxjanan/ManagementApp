@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ManagementApp</string>
+    <string name="title_home">Home</string>
+    <string name="title_notice">Notices</string>
+    <string name="title_location">Location</string>
+    <string name="logout_button">Logout</string>
+    <string name="login_button">Login</string>
+    <string name="forgot_pass">Forgot Password</string>
+    <string name="content_desc1">MRGS Logo</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+</resources>
