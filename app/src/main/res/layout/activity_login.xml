@@ -12,7 +12,7 @@
         android:layout_width="140dp"
         android:layout_height="140dp"
         android:layout_marginTop="60dp"
-        android:layout_marginBottom="143dp"
+        android:layout_marginBottom="60dp"
         android:contentDescription="@string/content_desc1"
         app:layout_constraintBottom_toTopOf="@+id/Username"
         app:layout_constraintEnd_toEndOf="parent"
@@ -24,23 +24,26 @@
         android:id="@+id/login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
         android:layout_marginBottom="9dp"
         android:text="@string/login_button"
         android:textAllCaps="false"
         app:layout_constraintBottom_toTopOf="@+id/pass_forgot"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Password" />
 
     <Button
         android:id="@+id/pass_forgot"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="97dp"
+        android:layout_marginBottom="132dp"
         android:text="@string/forgot_pass"
         android:textAllCaps="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
@@ -48,9 +51,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="textPersonName"
         android:hint="@string/username"
         android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:background="@drawable/border1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -60,16 +64,30 @@
         android:id="@+id/Password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="27dp"
-        android:layout_marginBottom="69dp"
+        android:layout_marginTop="8dp"
         android:ems="10"
-        android:inputType="textPassword"
         android:hint="@string/password"
         android:importantForAutofill="no"
-        app:layout_constraintBottom_toTopOf="@+id/login"
+        android:inputType="textPassword"
+        android:background="@drawable/border1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Username" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginRight="11dp"
+        android:text="@string/remember_me"
+        app:layout_constraintBottom_toTopOf="@+id/pass_forgot"
+        app:layout_constraintEnd_toStartOf="@+id/login"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Password" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
