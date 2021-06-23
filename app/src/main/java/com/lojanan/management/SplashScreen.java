@@ -39,7 +39,8 @@ public class SplashScreen extends AppCompatActivity {
         Handler handler = new Handler();
         handler.postDelayed(() -> {
             startActivity(new Intent(SplashScreen.this,Login.class));
+            overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
             finish();
-        },3000);
+        },2500);
     }
 }
