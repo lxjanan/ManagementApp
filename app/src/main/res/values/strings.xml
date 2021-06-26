@@ -8,6 +8,6 @@
     <string name="forgot_pass">Forgot Password</string>
     <string name="content_desc1">MRGS Logo</string>
     <string name="password">Password</string>
-    <string name="username">Username</string>
+    <string name="email">Email</string>
     <string name="remember_me">Remember me</string>
 </resources>
