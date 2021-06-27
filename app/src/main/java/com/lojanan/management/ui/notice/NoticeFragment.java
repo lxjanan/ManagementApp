@@ -12,22 +12,22 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.lojanan.management.databinding.FragmentDashboardBinding;
+import com.lojanan.management.databinding.FragmentNoticeBinding;
 
 public class NoticeFragment extends Fragment {
 
     private NoticeViewModel noticeViewModel;
-    private FragmentDashboardBinding binding;
+    private FragmentNoticeBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         noticeViewModel =
                 new ViewModelProvider(this).get(NoticeViewModel.class);
 
-        binding = FragmentDashboardBinding.inflate(inflater, container, false);
+        binding = FragmentNoticeBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textDashboard;
+        final TextView textView = binding.textNotice;
         noticeViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {

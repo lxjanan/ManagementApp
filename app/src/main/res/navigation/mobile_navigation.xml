@@ -22,4 +22,9 @@
         android:name="com.lojanan.management.ui.location.LocationFragment"
         android:label="@string/title_location"
         tools:layout="@layout/fragment_location" />
+    <activity
+        android:id="@+id/toDoActivity"
+        android:name="com.lojanan.management.ToDoActivity"
+        android:label="activity_to_do"
+        tools:layout="@layout/activity_to_do" />
 </navigation>
